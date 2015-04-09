@@ -15,3 +15,5 @@ gulp.task('templates', function() {
 gulp.task('watch', function() {
   gulp.watch('./views/*.jade', ['templates']);
 });
+
+gulp.task('default', ['templates', 'watch']);
