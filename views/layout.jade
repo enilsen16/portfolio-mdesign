@@ -7,25 +7,26 @@ html
     link(rel='stylesheet', href='../www/stylesheets/style.css')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
   body
-    nav.light-blue.lighten-1(role='navigation')
-      .nav-wrapper.container
-        a#logo-container.brand-logo(href="#page-top") Erik Nilsen
-        ul.right.hide-on-med-and-down
-          li
-            a(href='#projects') Projects
-          li
-            a(href='#about') About
-          li
-            a(href='#contact') Contact
-        ul#nav-mobile.side-nav
-          li
-            a(href='#projects') Projects
-          li
-            a(href='#about') About
-          li
-            a(href='#contact') Contact
-        a.button-collapse(href='#', data-activates='nav-mobile')
-          i.mdi-navigation-menu
+    .navbar-fixed
+      nav.light-blue.lighten-1(role='navigation')
+        .nav-wrapper.container
+          a.brand-logo(href='#', style='visibility: hidden') Erik
+            ul.right.hide-on-med-and-down
+              li
+                a(href='#projects') Projects
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
+            a.button-collapse(href='#', data-activates='nav-mobile')
+              i.mdi-navigation-menu
+            ul#nav-mobile.side-nav
+              li
+                a(href='#projects') Projects
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
     #index-banner.section.no-pad-bot
       .container
         br
@@ -38,3 +39,4 @@ html
     block content
     script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.1.min.js')
     script(type='text/javascript', src='../www/javascript/materialize.min.js')
+    script(type='text/javascript', src='../www/javascript/main.js')
