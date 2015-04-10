@@ -1,12 +1,28 @@
 section#projects
-  .container
-    .row
-      .col.l6.m6.s12 
-        h2 Projects
-        
-        p Some of my best projects can be found here
-        
-        ul
-          li Eefgilm
-          li Github-SMS
-          li Ordr
+	.container
+		.row
+			.col.l12.m12.s12 
+				h2 Projects
+				
+				h5 Some of my best projects can be found here
+		
+		.row
+			.col.s12.m6.l5
+				.card.small
+					.card-image.waves-effect.waves-block.waves-light
+						img.activator(src='../www/img/gemfile.png')
+					.card-content
+						span.card-title.activator.grey-text.text-darken-4
+							| Eefgilm
+							i.mdi-navigation-more-vert.right
+						p
+					.card-reveal
+						span.card-title.grey-text.text-darken-4
+							| Eefgilm
+							i.mdi-navigation-close.right
+						p
+							| Eefgilm automatically modifies a ruby gemfile to make them a little easier to read, 
+							| it does this by alphabetizing the gems, removing all comments, and 
+							| removing all whitespace including leading and trailing.
+						
+						a(href='https://github.com/enilsen16/eefgilm') View this project on GitHub
