@@ -2,23 +2,25 @@ doctype html
 html
 	head
 		title Erik Nilsen
-		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css', type='text/css')
+		link(rel='shortcut icon', type='image/png', href='../www/img/favicon.ico')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css')
 		link(type='text/css', rel='stylesheet', href='stylesheets/materialize.min.css', media='screen,projection')
 		link(rel='stylesheet', href='../www/stylesheets/style.css')
 		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
 	body
-		.navbar-fixed#page-top
-			nav.light-blue.lighten-1(role='navigation')
-				.nav-wrapper.container
-					a.brand-logo(href='#page-top', style='visibility: hidden') Erik Nilsen
-						ul.right.hide-on-med-and-down
-							li
-								a(href='#projects') Projects
-							li
-								a(href='#about') About
-							li
-								a(href='#contact') Contact
+		header
+			.navbar-fixed#page-top
+				nav.teal.darken-2(role='navigation')
+					.nav-wrapper.container
+						a.brand-logo(href='#page-top', style='visibility: hidden') Erik Nilsen
+							ul.right.hide-on-med-and-down
+								li
+									a(href='#projects') Projects
+								li
+									a(href='#about') About
+								li
+									a(href='#contact') Contact
 						a.button-collapse(href='#', data-activates='nav-mobile')
 							i.mdi-navigation-menu
 						ul#nav-mobile.side-nav
@@ -30,13 +32,13 @@ html
 								a(href='#about') About
 							li
 								a(href='#contact') Contact
-		#index-banner.section.no-pad-bot
+		#index-banner.section.no-pad-bot.teal
 			.container
 				br
 				br
-				h1.header.center.black-text Erik Nilsen
+				h1.header.center.white-text Erik Nilsen
 				.row.center
-					h5.header.col.s12.light Ruby and JavaScript Developer
+					h5.header.col.s12.teal-text.text-lighten-4 Ruby and JavaScript Developer
 				br
 	
 		block content

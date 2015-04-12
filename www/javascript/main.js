@@ -1,6 +1,6 @@
-$( document ).ready(function(){
+$(document).ready(function(){
 	// side-bar navigation
-	$(".button-collapse").sideNav();	
+	$(".button-collapse").sideNav({ closeOnClick: true });
 });
 
 
