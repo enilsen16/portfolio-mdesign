@@ -18,3 +18,7 @@ main {
 	bottom: 0;
 	width: 100%;
 }
+
+section {
+	padding: 100px 0;
+}
